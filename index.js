@@ -14,8 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
       newCheckbox.type = "checkbox";
       var newLabel = document.createElement("label");
       newLabel.textContent = taskText;
+      newLabel.style.fontSize = "2em"
+      newLabel.style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+      newLabel.style.padding = "10px"; 
       var removeButton = document.createElement("button");
       removeButton.textContent = "Remove";
+      removeButton.style.fontSize = "1em";
+      removeButton.style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+      removeButton.style.padding = "10px";
       
       // Add event listener to remove button
       removeButton.addEventListener("click", function() {
