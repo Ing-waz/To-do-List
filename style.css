@@ -1,9 +1,10 @@
 h1 {    
         margin-bottom: 20px;
         text-align: center;
-        position: absolute;
-        top: 10%; 
-        right: 50%;
+        position: relative;
+        z-index: 1; 
+        top: 2%; 
+        right: 22%;
         transform: translate(50%,-50%);
         text-transform: uppercase;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -46,6 +47,8 @@ h1 {
   
   
   #task-form {
+    position: relative;
+    z-index: 1; 
     display: flex;
     align-items: center;
     justify-content: center;

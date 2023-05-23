@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var newTask = document.createElement("li");
       var newCheckbox = document.createElement("input");
       newCheckbox.type = "checkbox";
+      newCheckbox.style.transform = "scale(1.5)";
       var newLabel = document.createElement("label");
       newLabel.textContent = taskText;
       newLabel.style.fontSize = "2em"
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       removeButton.addEventListener("click", function() {
         newTask.remove(); // Remove the list item
       });
-  
+     
       // Append the new elements to the list
       newTask.appendChild(newCheckbox);
       newTask.appendChild(newLabel);
